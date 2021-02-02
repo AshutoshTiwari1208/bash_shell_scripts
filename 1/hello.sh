@@ -1,4 +1,5 @@
 #! /bin/bash
+# she-bang is only to tell what script file is interpreted - bash
 
 # << --- Printing Stuff - System, User Variables --- >>
 # echo "hello world"
@@ -51,5 +52,39 @@
 #     echo "not equal to ashu1"
 # else
 #     echo "never reaches here haha"
+# fi
+
+## < --- Checking files using Control statements --- >
+## -f(file) | -d(directory) | -c(character file/image/video files) | -b(partition-usb-memoryDisk)
+## -s(if file non empty) | -r(read permission is there) | -w(write permission) | -x(execute permission)
+## Stop cursor from going to next line 👇
+## 1) echo -e "enter username: \c" (\c works with -e flag)
+## 2) echo -n "enter username :"
+
+# echo -n "Enter filename: "
+# read filename
+# if [ -f $filename ];
+# then 
+#     echo "File exists"
+# else
+#     echo "File doesn't exists"
+# fi
+
+# echo -n "Enter directory  name: "
+# read directoryName
+# if [ -d $directoryName ]
+# then
+#     echo "directory Exists !!"
+# else
+#     echo "directory doesn't exists !!"
+# fi
+
+# echo -n "Enter filename to check data: "
+# read filename
+# if [ -s $filename ];
+# then 
+#     echo "File has some data"
+# else
+#     echo "File doesn't has data"
 # fi
 
