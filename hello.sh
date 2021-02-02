@@ -23,6 +23,33 @@
 # echo
 # echo "Your username is set to: $username"
 # echo "Your password is set to: $REPLY"
-echo "Please enter names :"
-read -a names
-echo "Names are : ${names[1]}"
+# echo "Please enter names :"
+# read -a names
+# echo "Names are : ${names[1]}"
+
+# << --- passing parameters --- >>
+# echo $1 $2 $0 ' > $1 $2 $0'
+# echo $# # no of arguments passed
+# args=("$@") # get arguments from index 1.... as array
+# echo ${args[1]}
+
+# <<-- Control Statements -- >>
+# number=10;
+# if (($number <= 10))
+# then 
+#     echo "condition is true"
+# else
+#     echo "condition is false"
+# fi
+
+# a="ash"
+# if [ "$a" = "ashu" ]; # note the spaces ==> [ ] is a program and things inside arguments
+# then
+#     echo "are equal $a"
+# elif [ "$a" != "ashu1" ];
+# then
+#     echo "not equal to ashu1"
+# else
+#     echo "never reaches here haha"
+# fi
+
