@@ -10,3 +10,6 @@ echo "$num1-$num2" | bc
 echo "$num1%$num2" | bc
 echo "scale=10;$num1/$num2" | bc # use scale when dividing using bc
 echo "1+3.1" | bc
+
+echo "scale=20;sqrt(122)" | bc 
+echo "4^4" | bc
